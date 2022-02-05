@@ -6,24 +6,23 @@
        based on the button that was clicked.
 */
 
-const default = () => {
-   document.querySelector("body").style. = ;
+const defaultSwitch = () => {
+   document.querySelector("body").className = "container";
 };
 
-const oceanswitch = () => {
-   document.querySelector("body").style. = ;
+const oceanSwitch = () => {
+   document.querySelector("body").className = "container desert";
 };
 
-const highcontrastswitch = () => {
-   document.querySelector("body").style. = ;
+const highContrastSwitch = () => {
+   document.querySelector("body").className = "container ocean";
 };
 
-const desertswitch = () => {
-   document.querySelector("body").style. = ;
+const desertSwitch = () => {
+   document.querySelector("body").className = "container high-contrast";
 };
 
-document.querySelector("#default").addEventListener('click', default);
-document.querySelector("#ocean").addEventListener('click', oceanswitch);
-document.querySelector("#high-contrast").addEventListener('click', highcontrastswitch);
-document.querySelector("#desert").addEventListener('click', desertswitch);
-
+document.querySelector("#default").addEventListener('click', defaultSwitch);
+document.querySelector("#ocean").addEventListener('click', oceanSwitch);
+document.querySelector("#high-contrast").addEventListener('click', highContrastSwitch);
+document.querySelector("#desert").addEventListener('click', desertSwitch);
